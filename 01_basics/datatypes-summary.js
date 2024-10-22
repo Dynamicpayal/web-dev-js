@@ -36,3 +36,28 @@ console.log(typeof scoreValue); // number
 console.log(typeof myFunction); // function(object function)
 console.log(typeof bigNumber); // bigint
 console.log(typeof heros); // object
+
+
+// *************************************************************
+
+// Stack (primitive) -> copy, Heap (non primitive) -> reference
+
+let myYoutubename = "srikedhavidasidotcom"
+
+let anothername = myYoutubename;
+anothername = "sripriyajidasidotcom"
+
+console.log(anothername); // sripriyajidasidotcom
+console.log(myYoutubename); // srikedhavidasidotcom
+
+let userOne = {
+    email : "pn123@gmail.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne;
+
+userTwo.email = "payal@google.com"
+
+console.log(userTwo.email); // payal@google.com 
+console.log(userOne.email); // payal@google.com
